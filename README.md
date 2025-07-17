@@ -206,6 +206,18 @@ docker build -t scriberr:main -f Dockerfile .
 docker build -t scriberr:main-cuda128 -f Dockerfile-cuda128 .
 ```
 
+### Building a macOS App (Apple Silicon)
+
+Scriberr can be packaged as a native macOS application using Electron.
+After installing dependencies, run the following commands:
+
+```bash
+npm run build        # build the SvelteKit project
+npm run dist         # create a macOS dmg in the dist/ folder
+```
+
+The generated DMG can be installed on macOS devices with Apple Silicon.
+
 ### Advanced Configuration
 
 The application can be customized using the following environment variables in your `.env` file.
